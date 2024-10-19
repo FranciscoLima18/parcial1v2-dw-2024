@@ -1,1 +1,39 @@
-Index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div>
+      <form class="LoginForm" id="Loginform" consumes="application/json">
+        <h1>Login</h1>
+        <div class="divinput">
+          <label for="Username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Usuario"
+            name="username"
+          />
+        </div>
+        <div class="divinput">
+          <label for="Contraseña">Contraseña:</label>
+          <input
+            type="password"
+            id="contraseña"
+            placeholder="Contraseña"
+            name="contraseña"
+          />
+          <small></small>
+        </div>
+
+        <button type="submit" id="registroboton">Entrar</button>
+      </form>
+    </div>
+    <script type="module" src="scripts/auth.js"></script>
+    <script type="module" src="scripts/login.js"></script>
+  </body>
+</html>
